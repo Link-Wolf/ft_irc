@@ -52,11 +52,12 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <div align="center">
   <a>
-    <img src="https://media.discordapp.net/attachments/907303542438629406/1064918116712329216/image.png?width=2128&height=1469" alt="our irc starting">
+    <img src="assets/rat_irc.png" alt="our irc motd">
   </a>
 </div>
 </br>
@@ -64,44 +65,46 @@ This project aims to reproduce the behavior of a real IRC server in C++ 98. It's
 It requires us to develop an IRC server that's conform to the IRC standards, so we can connect to it and test it with a real IRC client. We don't have to develop a client, but we chose to use Weechat as our reference client.
 
 Specifically, we have to:
-- Manage many clients without being stucked or blocked
-- Communicate with the clients using TCP/IP protocol
-- It must implement the following features:
-  - Being able to authenticate with a nickname, a username and a realname
-  - Joining a channel
-  - Sending and receiving private messages
-  - Sending and receiving messages to a channel
-  - Having channels operators and basic users
-  - Having all operators specifics commands 
-  - exit without any options
+
+-   Manage many clients without being stucked or blocked
+-   Communicate with the clients using TCP/IP protocol
+-   It must implement the following features:
+    -   Being able to authenticate with a nickname, a username and a realname
+    -   Joining a channel
+    -   Sending and receiving private messages
+    -   Sending and receiving messages to a channel
+    -   Having channels operators and basic users
+    -   Having all operators specifics commands
+    -   exit without any options
 
 As an IRC server, we support the following commands:
-- `NICK` - Change nickname
-- `USER` - Set username and realname
-- `PASS` - Submit password on connect
-- `QUIT` - Quit the server
-- `JOIN` - Join a channel
-- `PART` - Leave a channel
-- `PRIVMSG` - Send a message
-- `TOPIC` - Set or check a channel topic
-- `MODE` - Set or check a user or channel mode
-- `KICK` - Kick a user from a channel
-- `INVITE` - Invite a user to a channel
-- `PING` - Ping the server
-- `NOTICE` - Send a notice
+
+-   `NICK` - Change nickname
+-   `USER` - Set username and realname
+-   `PASS` - Submit password on connect
+-   `QUIT` - Quit the server
+-   `JOIN` - Join a channel
+-   `PART` - Leave a channel
+-   `PRIVMSG` - Send a message
+-   `TOPIC` - Set or check a channel topic
+-   `MODE` - Set or check a user or channel mode
+-   `KICK` - Kick a user from a channel
+-   `INVITE` - Invite a user to a channel
+-   `PING` - Ping the server
+-   `NOTICE` - Send a notice
 
 And the `i` channel mode, which allows only invited users to join the channel
 
 We added some bonuses to our server :
 
-- The `t` channel mode, which allows only operators to change the topic of the channel
-- The ability to send and receive files using the `DCC` command
-- Our fantastic bot, Ratatouille-b0t, who will help you to use our server by answer to your `[...] quoi` messages by `feur` and some others originals surprises !
-
+-   The `t` channel mode, which allows only operators to change the topic of the channel
+-   The ability to send and receive files using the `DCC` command
+-   Our fantastic bot, Ratatouille-b0t, who will help you to use our server by answer to your `[...] quoi` messages by `feur` and some others originals surprises !
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 Because it's a simple C++ project, there isn't much to say here
@@ -114,48 +117,51 @@ Having a C++ compiler like c++
 
 1. Clone the repo
 
-   ```sh
-   git clone https://github.com/Link-Wolf/ft_irc.git
-   ```
+    ```sh
+    git clone https://github.com/Link-Wolf/ft_irc.git
+    ```
 
 2. Compile the project
 
-   ```sh
-   cd ft_irc; make
-   ```
+    ```sh
+    cd ft_irc; make
+    ```
 
 3. Execute it
 
-   ```sh
-   ./ircserv [port] [password]
-   ```
+    ```sh
+    ./ircserv [port] [password]
+    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Use our IRC server as you'd use a real one, but please be kind to him and remember he doesn't implement everything !
 
 <div align="center">
  <a>
-   <img src="https://weechat.org/media/images/ft_plugins.png" alt="irc example">
+   <img src="assets/weechat.png" alt="irc example">
  </a>
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-- [x] Add bonus features
-- [x] Add back to top links
+-   [x] Add bonus features
+-   [x] Add back to top links
 
 See the [open issues](https://github.com/Link-Wolf/ft_irc/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -170,6 +176,7 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## Contact
 
 Mail : xxxxxxx@student.42mulhouse.fr
